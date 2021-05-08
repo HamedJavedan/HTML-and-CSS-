@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+}
+
+.brand{
+    width: 80px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.right-side {
+    display: flex;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-top: 1px solid transparent;
+    transition: border-top 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+
+}
+
+.nav-link-wrapper:hover {
+    border-top: 1px solid  rgb(47, 153, 224);
+}
+
+.nav-link-wrapper a:hover {
+    color: rgb(47, 153, 224);
+}
+
+
+
+.nav-signup-link {
+    height: 22px;
+    border-top: 1px solid transparent;
+    transition: border-top 0.5s;
+}
+
+.nav-signup-link a {
+    color:  #0065FC;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-signup-link:hover {
+    border-top: 1px solid  rgb(47, 153, 224);
+}
+
+.nav-signup-link a:hover {
+    color: rgb(47, 153, 224);
+}
+
+
+.content{
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+
+.left-side-tow {
+    display: flex;
+}
+
+form.Search-Location button {
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background: #f1f1f1;
+    font-size: 17px;
+    border: 16px solid #f1f1f1 ;
+    border-left: none;
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+
+  form.Search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #f1f1f1;
+    float: left;
+    width: 60%;
+    height: 30px;
+    background: white;
+    
+  }
+  
+
+
+
+  form.Search button {
+    float: left;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    background: #0065FC;
+    color: white;
+    font-size: 17px;
+    border: 0px solid;
+    border-left: none;
+    cursor: pointer;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+
+
+  form.Search button:hover {
+    background: #0b7dda;
+  }
+  
+
+
+  form.Search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+ 

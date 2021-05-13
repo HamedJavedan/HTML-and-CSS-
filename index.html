@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
         <style>
             body {
                 font-family: 'Raleway';font-size: 18px;
@@ -41,12 +41,28 @@
            <div class="content"> Downtown or in nature </div>
            <div class="left-side-tow">
                 <form class="Search-Location">
-                    <button type="submit"><i class="fas fa-map-marker fa-lg"></i></button>
+                    <button type="submit"><i class="fas fa-map-marker-alt fa-lg"></i></button>
                 </form>
                 <form class="Search" >
                     <input type="text" placeholder="Marseille, France" name="search">
                     <button type="submit"> Search </button>
                 </form>
+
+            </div>
+            <div class="filters">
+                <b class="Filters-Text">Filters</b>
+                <section>
+                    <button class="low-cost-i-c" autofocus ><i class="fas fa-money-bill-wave fa-lg"></i></button><button id="Low-cost"><b>Low cost</b></button>
+                </section>
+                <section>
+                    <button class="family-friendly-i-c" autofocus ><i class="fas fa-child fa-lg"></i></button><button id="family-friendly"><b>Family-friendly</b></button>
+                </section>
+                <section>
+                    <button class="romantic-i-c" autofocus ><i class="fas fa-heart fa-lg"></i></button><button id="romantic"><b>Romantic</b></button>
+                </section>
+                <section>
+                    <button class="pets-allowed-i-c" autofocus ><i class="fas fa-dog fa-lg"></i></button><button id="pets-allowed"><b>Pets allowed</b></button>
+                </section>
 
             </div>
         </div>

@@ -2,71 +2,44 @@ body{
     margin: 0px;
 }
 
-.brand{
-    width: 80px;
+.flex-grow-1 {
+    flex-grow: 1;
 }
 
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-}
-
-.right-side {
+.navbar {
+    padding: 0px;
+    margin: 0px;
     display: flex;
 }
 
-.nav-wrapper > .right-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
-}
-
-.nav-link-wrapper {
-    height: 22px;
+.navbar_item {
+    list-style: none;
+    padding: 20px;
     border-top: 1px solid transparent;
     transition: border-top 0.5s;
 }
 
-.nav-link-wrapper a {
+.navbar_link { 
+    text-decoration: none;
+}
+
+.navbar_item a {
     color: black;
     text-decoration: none;
     transition: color 0.5s;
 
 }
 
-.nav-link-wrapper:hover {
+.navbar_item:hover {
     border-top: 1px solid  rgb(47, 153, 224);
 }
 
-.nav-link-wrapper a:hover {
-    color: rgb(47, 153, 224);
-}
-
-
-
-.nav-signup-link {
-    height: 22px;
-    border-top: 1px solid transparent;
-    transition: border-top 0.5s;
-}
-
-.nav-signup-link a {
-    color:  #0065FC;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.nav-signup-link:hover {
-    border-top: 1px solid  rgb(47, 153, 224);
-}
-
-.nav-signup-link a:hover {
+.navbar_item a:hover {
     color: rgb(47, 153, 224);
 }
 
 
 .content{
-    margin-left: 25px;
     margin-bottom: 15px;
 }
 
@@ -77,47 +50,38 @@ body{
 
 .search-location {
     border: 2px solid white  ;
-    cursor: pointer;
     padding: 0;
-    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-width: 2px 0;
 }
 
 
 .search-location_icon {
-    margin-left: 25px;
     display: inline-block;
     background-color: #f1f1f1;
     width: 50px;
     height: 50px;
-    position: absolute;
-    top: -2px;
-    left: -2px; 
     line-height: 50px;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
+    display: inline-block;
    
 }
 
 
   form.Search input[type=text] {
-    margin-left: 56px;
-    margin-bottom: 25px;
-    padding: 26px 0px 22px 24px;
+    padding: 14px;
     font-size: 17px;
     border: 1px solid #f1f1f1;
-    float: left;
-    width: 60%;
-    height: 30px;
     background: white;
+    width: 195px;
+    margin-bottom: 25px;
     
     
 }
-  
-
-
 
   form.Search button {
-    float: left;
     width: 100px;
     height: 50px;
     padding: 10px;
@@ -132,14 +96,11 @@ body{
   }
   
 
- 
-
 * {
     box-sizing: border-box;
 }
 
 .filter-text{
-    margin-left: 28px;
     margin-right: 25px;
 }
 
@@ -151,6 +112,7 @@ body{
     padding: 0;
     position: relative;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -183,14 +145,26 @@ body{
   width: 25px;
   background-color: white;
   color: #0065FC;
-  margin-left: 28px;
   padding-left: 9px;
   margin-bottom: 20px;
 }
 
-.left-half{
-    padding: 0px 0px 40% 0px ;
+
+.row {
+    display: flex;
+    justify-content: space-between;
 }
+
+.col {
+    width: 100%;
+}
+
+.bg-grey {
+    background-color: #f1f1f1 ;
+    padding: 0px 10px 10px 0px;
+    border-radius: 20px;
+}
+
 
 .left-half_text{
     padding: 40px 0px 0px 35px;
@@ -198,19 +172,21 @@ body{
 
 
 .card{
-    padding: 0px 0px 0px 0px;
     background-color: white;
     border: 5px solid white;
-    margin-left: 40px;
     border-radius: 20px;
-    float: left;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+    
 }
 
 .card-img-top{
-    width: 250px;
+    height: 150px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    width: 100%;
+    object-fit: cover; 
 }
 
 .card-title{
@@ -230,10 +206,11 @@ body{
 .card-b{
     background-color: white;
     border: 1px solid #f1f1f1 ;
-    margin-left: 20px;
+    margin-right: 10px;
     border-radius: 15px;
     float: left;
     margin-bottom: 30px;
+    box-shadow: 2px 2px 2px 2px gray;
 }
 
 .card-b-img{
@@ -247,5 +224,36 @@ body{
     padding: 5px 0px 10px 15px;
     margin: 0px;
     font-size: 17px;
+}
+
+
+@media (max-width: 375px) {
+    .navbar_item{
+        width: 50%;
+    }
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .flex-grow-1{
+        order: -1;
+        padding-left: 40px;
+    }
+    .navbar_item--signup{
+        order: -1;
+        font-weight: bolder;
+        padding-top: 30px;
+        text-align: end;
+    }    
+    .navbar_item--acc{
+        order: 0;
+        text-align: center;
+    }
+    .navbar_item--act{
+        order: 1;
+        text-align: center;
+    }
+    .row{
+        flex-direction: column;
+    }
 }
 

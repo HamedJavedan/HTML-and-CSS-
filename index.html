@@ -8,7 +8,7 @@
         <title>Reservia </title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
         <style>
             body {
@@ -18,34 +18,30 @@
     
     </head>
     <body>
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="left-side">
-                    
-                <img class="brand" src="./Reservia ressources EN/images/logo/Reservia@3x.png" alt="Reservia">
-    
-                </div>
-                <div class="right-side">
-                    <div class="nav-link-wrapper">
-                        <a href="index.html">Accommodations</a>
-                    </div>
-                    <div class="nav-link-wrapper">
-                        <a href="activities.html">Activities</a>
-                    </div>
-                        <div class="nav-signup-link">
-                            <a href="signup.html"><b>Sign up</b></a>
-                        </div> 
-                </div>
-            </div>
+        <div class="container" style="max-width: 1000px; margin: auto; padding: 15px;">
+            <nav>
+                <ul class="navbar">
+                    <li class="navbar_item flex-grow-1">
+                        <img src="/Reservia ressources EN/images/logo/Reservia@3x.png" class="navbar_logo" style="margin-left: -25px;" alt="Reservia" title="reservia">
+                    </li>
+                    <li class="navbar_item navbar_item--acc">
+                        <a class="navbar_link" href="#accommodations">Accommodations</a>
+                    </li>
+                    <li class="navbar_item navbar_item--act">
+                        <a class="navbar_link"  href="#activities">Activities</a>
+                    </li>
+                    <li class="navbar_item navbar_item--signup">
+                        <a class="navbar_link navbar_link--signup" style="color: #0065FC;" href="">Sign up</a>
+                    </li>
+                </ul>
+            </nav>
             <b class="content">Find a Place for your dream vacation</b>
            <div class="content"> Downtown or in nature </div>
            <div class="left-side-tow">
-                <button class="search-location">
-                    <span class="search-location_icon"><i class="fas fa-map-marker-alt fa-lg"></i></span>
-                </button>
                 <form class="Search" >
-                    <input type="text" placeholder="Marseille, France" name="search">
-                    <button type="submit"> Search </button>
+                    <div class="search-location">
+                        <span class="search-location_icon"><i class="fas fa-map-marker-alt"></i></span>
+                    </div><input type="text" placeholder="Marseille, France" name="search"><button type="submit"> Search </button>
                 </form>
             </div>
             <b class="filter-text">Filters</b>
@@ -69,123 +65,134 @@
                 <span class="info-ican"><i class="fas fa-info fa-xs"></i></span>
                 <span class="info-text" >More than 500 accommodations are available in this city</span>
             </div>
-            <section class="container-b">
-                <div class="left-half" style="background-color: hsl(0, 0%, 87%); border-radius:25px;">
-                    <h2 class="left-half_text"><b>Accommodations in Marseille</b></h2>
-                    <div class="card" style="width: 260px;">
-                        <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
-                        <div class="card-body">
-                          <h4 class="card-title"><b>Auberge la Cannebiere</b></h4>
-                          <p class="card-text">Night starting at <b>25$</b></p>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: hsl(0, 0%, 87%);"></i>
+            <div class="bg-grey">
+                <h2 class="left-half_text"><b>Accommodations in Marseille</b></h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                            <div class="card-body">
+                            <h4 class="card-title"><b>Auberge la Cannebiere</b></h4>
+                            <p class="card-text">Night starting at <b>25$</b></p>
+                            <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
+                            <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                            <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                            <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                            <i class="fas fa-star fa-xs" style="color: hsl(0, 0%, 87%);"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="card" style="width: 260px;">
-                        <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
-                        <div class="card-body">
-                          <h4 class="card-title"><b>Hotel du port</b></h4>
-                          <p class="card-text">Night starting at <b>52$</b></p>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Hotel du port</b></h4>
+                              <p class="card-text">Night starting at <b>52$</b></p>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="card" style="width: 260px;">
-                        <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
-                        <div class="card-body">
-                          <h4 class="card-title"><b>Les mouettes Hotel</b></h4>
-                          <p class="card-text">Night starting at <b>76$</b></p>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: hsl(0, 0%, 87%);"></i>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Les mouettes Hotel</b></h4>
+                              <p class="card-text">Night starting at <b>76$</b></p>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: hsl(0, 0%, 87%);"></i>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de mer">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Hotel de mer</b></h4>
+                              <p class="card-text">Night starting at <b>46$</b></p>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: hsl(0, 0%, 87%);"></i>
+                              <i class="fas fa-star fa-xs" style="color: hsl(0, 0%, 87%);"></i>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge La Panier">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Auberge La Panier</b></h4>
+                              <p class="card-text">Night starting at <b>23$</b></p>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: hsl(0, 0%, 87%);"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="card" style="width: 260px;">
-                        <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de mer">
-                        <div class="card-body">
-                          <h4 class="card-title"><b>Hotel de mer</b></h4>
-                          <p class="card-text">Night starting at <b>46$</b></p>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: hsl(0, 0%, 87%);"></i>
-                          <i class="fas fa-star fa-xs" style="color: hsl(0, 0%, 87%);"></i>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 260px;">
-                        <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge La Panier">
-                        <div class="card-body">
-                          <h4 class="card-title"><b>Auberge La Panier</b></h4>
-                          <p class="card-text">Night starting at <b>23$</b></p>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: hsl(0, 0%, 87%);"></i>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 260px;">
-                        <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hotel chez Amina">
-                        <div class="card-body">
-                          <h4 class="card-title"><b>Hotel chez Amina</b></h4>
-                          <p class="card-text">Night starting at <b>96$</b></p>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                          <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
-                        </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="./Reservia ressources EN/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hotel chez Amina">
+                            <div class="card-body">
+                              <h4 class="card-title"><b>Hotel chez Amina</b></h4>
+                              <p class="card-text">Night starting at <b>96$</b></p>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC; margin-left: 10px;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                              <i class="fas fa-star fa-xs" style="color: #0065FC;"></i>
+                            </div>
+                        </div>    
                     </div>
                 </div>
-                <div class="right-half">
-
+            </div>
+            <h2 style="margin-top: 50px;"><b>Activities in Marseille</b></h2>
+            <div class="card-b" style="order: 0;">
+                <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port">
+                <div class="card-b-body">
+                  <h4 class="card-b-title"><b>Old Port</b></h4>                    
                 </div>
-                <h2 style="margin-left: 25px; margin-top: 50px;"><b>Activities in Marseille</b></h2>
-                <div class="card-b" style="width: 260px;">
-                    <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port">
-                    <div class="card-b-body">
-                      <h4 class="card-b-title"><b>Old Port</b></h4>                    
-                    </div>
+            </div>
+            <div class="card-b" style="order: 1;">
+                <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort">
+                <div class="card-b-body">
+                  <h4 class="card-b-title"><b>Pomegues Fort</b></h4>                    
                 </div>
-                <div class="card-b" style="width: 260px;">
-                    <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort">
-                    <div class="card-b-body">
-                      <h4 class="card-b-title"><b>Pomegues Fort</b></h4>                    
-                    </div>
+            </div>
+            <div class="card-b" style="order: 2;">
+                <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island">
+                <div class="card-b-body">
+                  <h4 class="card-b-title"><b>Frioul Island</b></h4>                    
                 </div>
-                <div class="card-b" style="width: 260px;">
-                    <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island">
-                    <div class="card-b-body">
-                      <h4 class="card-b-title"><b>Frioul Island</b></h4>                    
-                    </div>
+            </div>
+            <div class="card-b" style="order: 3;">
+                <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park">
+                <div class="card-b-body">
+                  <h4 class="card-b-title"><b>Calanques National Park</b></h4>                    
                 </div>
-                <div class="card-b" style="width: 260px;">
-                    <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park">
-                    <div class="card-b-body">
-                      <h4 class="card-b-title"><b>Calanques National Park</b></h4>                    
-                    </div>
+            </div>
+            <div class="card-b" style="order: 4;">
+                <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                <div class="card-b-body">
+                  <h4 class="card-b-title"><b>Notre-Dame-de-la-Garde</b></h4>                    
                 </div>
-                <div class="card-b" style="width: 260px;">
-                    <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                    <div class="card-b-body">
-                      <h4 class="card-b-title"><b>Notre-Dame-de-la-Garde</b></h4>                    
-                    </div>
+            </div>
+            <div class="card-b" style="order: 5;">
+                <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park">
+                <div class="card-b-body">
+                  <h4 class="card-b-title"><b>Longchamp Park</b></h4>                    
                 </div>
-                <div class="card-b" style="width: 260px;">
-                    <img class="card-b-img" src="./Reservia ressources EN/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park">
-                    <div class="card-b-body">
-                      <h4 class="card-b-title"><b>Longchamp Park</b></h4>                    
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
     </body>
 </html>

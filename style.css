@@ -82,17 +82,16 @@ body{
 }
 
   form.Search button {
-    width: 100px;
+    width: 50px;
     height: 50px;
     padding: 10px;
     background: #0065FC;
     color: white;
     font-size: 17px;
     border: 0px solid;
-    border-left: none;
     cursor: pointer;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 10px;
+    margin-left: -6px;
   }
   
 
@@ -123,17 +122,15 @@ body{
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    position: absolute;
-    top: -2px;
-    left: -2px; 
     line-height: 38px;
     text-align: center;
+    margin-left: -2px;
    
 }
 
 .filter-item_text{
     display: inline-block; 
-    padding: 9px 15px 10px 45px;
+    padding: 9px 15px 10px 12px;
 }
 
 .info-ican{
@@ -157,6 +154,7 @@ body{
 
 .col {
     width: 100%;
+    order: 1;
 }
 
 .bg-grey {
@@ -166,15 +164,15 @@ body{
 }
 
 
-.left-half_text{
-    padding: 40px 0px 0px 35px;
+.title_text{
+    padding: 40px 0px 0px 15px;
 }
 
 
 .card{
     background-color: white;
     border: 5px solid white;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-bottom: 10px;
     margin-left: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -182,9 +180,9 @@ body{
 }
 
 .card-img-top{
-    height: 150px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    height: 90px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     width: 100%;
     object-fit: cover; 
 }
@@ -192,24 +190,60 @@ body{
 .card-title{
     padding: 5px 0px 0px 10px;
     margin: 0px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .card-text{
     padding: 1px 0px 0px 10px;
     margin: 0px;
-    font-size: 16px;
+    font-size: 14px;
+}
+
+.bg-grey-4 {
+    background-color: #f1f1f1 ;
+    padding: 0px 10px 10px 0px;
+    border-radius: 20px;
+    margin-left: unset;
+}
+
+.card-4{
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    order: 0;
+}
+
+.card-img-top-4{
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 40%;
+    object-fit: cover; 
+}
+
+.card-title-4{
+    padding: 10px 0px 10px 10px;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.card-text-4{
+    padding: 0px 0px 17px 10px;
+    margin: 0px;
+    font-size: 14px;
 }
 
 
 
 .card-b{
     background-color: white;
-    border: 1px solid #f1f1f1 ;
     margin-right: 10px;
-    border-radius: 15px;
-    float: left;
-    margin-bottom: 30px;
+    border-radius: 20px;
+    margin-bottom: 12px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -217,7 +251,9 @@ body{
     width: 250px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    width: 100%;
     margin: 0px 0px 0px 4px;
+    margin: 0.1px;
 }
 
 .card-b-title{
@@ -226,8 +262,41 @@ body{
     font-size: 17px;
 }
 
+.search-text{
+    display: none;
+}
 
-@media (max-width: 375px) {
+.search-icon{
+    display: inline !important;
+}
+
+.row{
+    flex-direction: column;
+}
+
+.bg-grey-5{
+    background-color: #f1f1f1 ;
+    margin-top: 30px;
+}
+
+.col-5{
+    width: 100%;
+    padding: 20px 0px 20px 30px;
+    
+    font-size: 15px;
+
+}
+
+@media (min-width: 775px) {
+
+    .search-icon{
+        display: none !important;
+    }
+
+    .search-text{
+        display: inline;
+    }
+
     .navbar_item{
         width: 50%;
     }
@@ -236,7 +305,6 @@ body{
     }
     .flex-grow-1{
         order: -1;
-        padding-left: 40px;
     }
     .navbar_item--signup{
         order: -1;
@@ -252,8 +320,29 @@ body{
         order: 1;
         text-align: center;
     }
-    .row{
-        flex-direction: column;
+
+    form.Search button{
+        width: 100px;
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
     }
+
+    .row{
+        flex-direction: row;
+    }
+
+    .col-4{
+        width: 60%;
+        order: 1;
+    }
+
+    .bg-grey-4{
+        margin-left: 25px;
+    }
+
+    .col{
+        order: 0;
+    }
+
 }
 

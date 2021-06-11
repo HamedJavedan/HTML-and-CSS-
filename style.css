@@ -478,18 +478,18 @@ body {
     }
 
     .card-b{
-        width: 250px;
-        margin-right: 35px;
-        margin-left: -10px;
+        width: 270px;
+        margin-right: 55px;
+        margin-left: -15px;
     }
 
     .card-b-img{
-        width: 250px;
+        width: 270px;
     }
     
     #card-b-img{
         height: 330px;
-        width: 250px;
+        width: 270px;
     }
 
     .card-b-img_p{

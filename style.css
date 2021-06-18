@@ -9,8 +9,8 @@ body {
 .container{
     max-width: 1218px;
     margin: auto; 
-    padding: 24px;
-    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .flex-grow-1 {
@@ -22,48 +22,46 @@ body {
 .navbar_item--signup{
     order: -1;
     font-weight: bolder;
-    text-align: end;
-    padding-top: 7px;
-    margin-right: -82px;
+    text-align: right;
 } 
 
-#su{
-    color: #0065FC;
-}
 
 .navbar_item--acc{
     order: 0;
     border-bottom: 2px solid #f1f1f1;
-    margin-bottom: 30px;
 }
 .navbar_item--act{
     order: 1;
     border-bottom: 2px solid #f1f1f1;
-    margin-bottom: 30px;
 }
 
 .navbar {
     padding: 0px;
-    margin: 0 -15px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .navbar_link { 
     text-decoration: none;
-    padding: 20px 101px;
-    padding-left: 11px;
     display: block;
+    padding: 10px 0;
+}
+
+.navbar_link-img{
+    padding-top: 5px;
 }
 
 .navbar_link-acc{
-    padding-left: 20px;
+    color: black;
+    text-align: center;
 }
 
 .navbar_link-act{
-    padding-left: 61px;
-    padding-right: 67px;
+    color: black;
+    text-align: center;
 }
+
+
 
 .navbar_link a{
     transition: color 0.5s;
@@ -73,9 +71,8 @@ body {
     list-style: none;
     width: 50%;
 }
-
-.navbar_item a {
-    color: black;
+.navbar_link--signup{
+    color: #0065FC;
 }
 
 .navbar_item--acc:hover {
@@ -222,8 +219,13 @@ body {
 
 .title_text{
     padding: 40px 0px 0px 15px;
-    text-align: start;
     margin-top: -20px;
+    display: flex;
+}
+
+.ican-class{
+    flex-grow: 1;
+    text-align: right;
 }
 
 
@@ -234,7 +236,6 @@ body {
     margin-bottom: 10px;
     margin-left: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    
 }
 
 .card-img-top{
@@ -257,11 +258,11 @@ body {
     font-size: 14px;
 }
 
-#f-star{
+.f-star{
     color: #0065FC;
 }
 
-#e-star{
+.e-star{
     color: hsl(0, 0%, 87%);
 }
 
@@ -273,8 +274,8 @@ body {
 .bg-grey-4 {
     background-color: #f1f1f1 ;
     padding: 0px 10px 10px 0px;
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -19px;
+    margin-right: -20px;
 }
 
 .card-4{
@@ -328,6 +329,7 @@ body {
     border-top-right-radius: 15px;
     width: 100%;
     margin: 0.1px;
+    object-fit: cover;
 }
 
 .card-b-title{
@@ -351,13 +353,11 @@ body {
 .bg-grey-5{
     background-color: #f1f1f1 ;
     margin-top: 30px;
-    margin-left: -25px;
-    margin-right: -25px;
 }
 
 .col-5{
     width: 100%;
-    padding: 20px 0px 20px 30px;
+    padding: 20px 0px 20px 5px;
     font-size: 15px;
 }
 
@@ -366,14 +366,22 @@ body {
 }
 
 @media (min-width: 875px) {
+    .container{
+        padding-left: 8px;
+        padding-right:  8px;
+    }
+
     .navbar{
         flex-wrap: nowrap;
     }
     .navbar_link{
-        padding: 20px;
-        margin-top: -17px;
         border-top: 2px solid transparent;
         transition: border-top 0.5s;
+        padding: 20px;
+    }
+
+    .navbar_item{
+        width: auto;
     }
 
     .navbar_link a {
@@ -389,35 +397,23 @@ body {
         color: rgb(47, 153, 224);
     }
 
-
     .flex-grow-1{
         order: 0;
-        padding: 11px 0px 0px 0px;
-        width: 40%;
-        margin-left: -10px;
         border-top: none;
+        margin-left: -24px;
     }
     .navbar_item--signup{
         order: 3;
-        padding: 11px 0px 0px 0px;
-        width: 20%;
         text-align: center;
-        margin-left: -70px;
     }
     .navbar_item--acc{
         order: 1;
         border-bottom: none;
-        margin-bottom: 15px;
-        padding-top: 11px;
-        width: 15%;
         text-align: center;
     }
     .navbar_item--act{
         order: 2;
         border-bottom: none;
-        margin-bottom: 15px;
-        padding-top: 11px;
-        width: 15%;
         text-align: center;
     } 
     .navbar_item--acc:hover {
@@ -469,9 +465,6 @@ body {
         padding-top: 52px;
     }
 
-    #su{
-        padding-left: 0px;
-    }
 
     .aim{
         margin-top: 50px;
@@ -479,7 +472,7 @@ body {
 
     .card-b{
         width: 270px;
-        margin-right: 55px;
+        margin-right: 64px;
         margin-left: -15px;
     }
 
@@ -487,7 +480,7 @@ body {
         width: 270px;
     }
     
-    #card-b-img{
+    .card-b-img_size{
         height: 330px;
         width: 270px;
     }
@@ -523,6 +516,10 @@ body {
     }
     .col-5{
         margin-left: -30px;
+    }
+
+    body{
+        margin-top: -18px;
     }
 
 }

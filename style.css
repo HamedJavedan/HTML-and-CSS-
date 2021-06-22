@@ -437,6 +437,18 @@ body {
         border-bottom: none;
     }
 
+    .navbar_link-acc{
+        padding-top: 25px;
+    }
+
+    .navbar_link-act{
+        padding-top: 25px;
+    }
+
+    .navbar_link--signup{
+        padding-top: 25px;
+    }
+
     .content{
         margin-left: -17px;
     }

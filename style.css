@@ -1,8 +1,6 @@
-body{
-    margin: 0px;
-}
 
-body {
+ body {
+    margin: 0px;
     font-family: 'Raleway';font-size: 18px;
 }
 
@@ -127,7 +125,7 @@ body {
     font-size: 17px;
     border: 1px solid #f1f1f1;
     background: white;
-    width: 230px;
+    width: 225px;
     margin-bottom: 25px;
     
     
